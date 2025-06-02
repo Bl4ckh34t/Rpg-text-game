@@ -24,7 +24,8 @@ function attack() {
   } else if (playerHP <= 0) {
     showMessage("You have been defeated!");
   } else {
-    showMessage("You hit the monster for" + damageToMonster. "It hit you for" + damageToPlayer);
+    showMessage("You hit the monster for" + damageToMonster); 
+    showMessage("It hit you for" + damageToPlayer);
   }
 }
 

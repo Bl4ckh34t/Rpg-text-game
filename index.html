@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <h1>Text RPG</h1>
+    <p id="story">A wild monster appears!</p>
+    <div id="stats">
+      <p>You: <span id="player-hp">100</span> HP</p>
+      <p>Monster: <span id="monster-hp">100</span> HP</p>
+    </div>
+    <div id="actions">
+      <button onclick="attack()">Attack</button>
+      <button onclick="heal()">Heal</button>
+      <button onclick="restart()">Restart</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -2,24 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Text RPG</title>
-  <link rel="stylesheet" href="style.css">
+  <div id="header">
+    <title>Survi unkwn Dimenson?</title>
+    <!-- <form>
+      <label for="fname">Player name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+    </form> -->
+    <script>
+      
+      var today_date = Date()
+      document.write(today_date) 
+      //document.writeln(today_date.slice(4,15)) 
+      
+      document.write("<br>"+"You arrive at unknown Dimension!"+"<br>") // skip a line 
+       
+      // confirm("r u ready")
+      let askName = prompt("Enter your name to play: ")
+      if (askName!=null){
+        document.writeln("Welcome"+" "+askName)
+        create()
+      
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      function RegisterUser(inputName,inputSex){
+
+        
+          // if (x.style.visibility =="hidden"){
+          //   x.style.visibility ="visible"
+          // }
+          // else {
+          this.name=inputName
+          this.sex=inputSex
+            document.write("Please register your name: ")
+            x.style.display ="visible"
+          // }
+      }
+      src="game.js"
+    </script>
+  </div>
+  
+
 </head>
 <body>
+  <!-- ctrl + / <link rel="stylesheet" href="style.css"> -->
   <div id="game">
-    <h1>Dead or Alive ?</h1>
-    <p id="story">You enter other Dimension!</p>
-    <p id="story">A wild monster appears!</p>
+    <h1> <small>Trust yr <i>intnct</i> or Die! </small> </h1>
+    
+    
+
+    
     <div id="stats">
-      <p>You: <span id="player-hp">100</span> HP</p>
-      <p>Monster: <span id="monster-hp">100</span> HP</p>
+      <p>[You] HP: <span id="player-hp">50</span> |Lv: <span id="player-lv">1</span> |Cyt: <span id="m-crystal">0</span> </p>
+      <p>[Monster] HP: <span id="monster-hp">45</span> |Lv: <span id="monster-lv">1</span></p>
     </div>
+    <p id="story"> ... </p>
     <div id="actions">
+      
       <button onclick="Attack()">Attack</button>
-      <button onclick="Heal()">Heal</button>
-      <button onclick="Restart()">Restart</button>
-      <button onclick="Register()">Register</button>
+      <button onclick="Run()">Run</button>
+      <button onclick="Item()">Item</button>
+      <!-- <button onclick="Skill_1()">Skill_1</button> -->
+      <!-- <button onclick="Skill_2()">Skill_2</button> -->
+      <!-- <button onclick="Passive()">Passive</button> -->
     </div>
+    <script>
+      x.style.display =="block";
+    </script>
   </div>
   <script src="game.js"></script>
 </body>
